@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-black-200);
+    color: var(--color-black-700);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

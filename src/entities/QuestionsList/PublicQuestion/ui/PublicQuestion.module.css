@@ -1,0 +1,65 @@
+/* Обёртка всего аккордеона */
+
+
+/* Один элемент аккордеона */
+.questionItem {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+/* Заголовок (вопрос) + стрелка */
+.questionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none; /* Чтобы при клике текст не выделялся */
+
+}
+
+.questionTitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Стрелка (треугольник или уголок) */
+.arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid var(--color-purple-600);
+    border-bottom: 2px solid var(--color-purple-600);
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+}
+
+/* Поворот стрелки при раскрытии */
+.open {
+    transform: rotate(225deg);
+}
+
+/* Контейнер с ответом (скрытый по умолчанию) */
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* Класс, который включается, когда элемент раскрыт */
+.show {
+    /* Можно ставить достаточно большое значение,
+       чтобы вместить контент (например, 9999px),
+       или задать что-то примерное. */
+    max-height: 600px;
+}
+
+.list {
+    padding: 20px;
+    border-bottom: 1px solid var(--color-black-100);
+}
+
+.list::marker {
+    font-size: 24px;
+    color: var(--color-purple-600);
+    list-style-position: inside
+}

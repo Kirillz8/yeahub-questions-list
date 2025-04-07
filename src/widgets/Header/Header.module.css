@@ -1,0 +1,33 @@
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white-900);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 1200px;
+    margin: 0 30px;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px; /* Расстояние между кнопками */
+}

@@ -1,0 +1,32 @@
+.btnAuth {
+    display: flex;
+    gap: 26px;
+}
+
+.loginButton {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: var(--color-purple-600);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.loginButton:hover {
+    transform: scale(1.1); /* Увеличиваем элемент на 10% */
+}
+
+.registerButton {
+    width: 170px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--color-purple-600);
+    color: var(--color-white-900);
+}
+
+.registerButton:hover {
+    opacity: 0.9;
+}

@@ -1,6 +1,6 @@
-import { Authorization } from '../Authorization/Authorization.tsx';
-import { HeaderLogo } from './HeaderLogo/HeaderLogo.tsx';
-import { Navigation } from './Navigation/Navigation.tsx';
+import { Authorization } from 'widgets/Authorization/Authorization.tsx';
+import { HeaderLogo } from 'widgets/Header/HeaderLogo/HeaderLogo.tsx';
+import { Navigation } from 'widgets/Header/Navigation/Navigation.tsx';
 import s from './Header.module.css';
 
 export const Header = () => {

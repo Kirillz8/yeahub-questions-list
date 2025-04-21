@@ -1,0 +1,21 @@
+/*.wrapper {}*/
+.title {
+    font-size: 14px;
+    color: var(--color-black-700);
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.tag {
+    border: 1px solid #ccc;
+    padding: 12px 10px;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+}
+.active {
+    border-color: blueviolet;
+    color: blueviolet;
+}

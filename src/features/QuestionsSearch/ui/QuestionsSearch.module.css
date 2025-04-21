@@ -1,0 +1,44 @@
+.searchWrapper {
+    position: relative;
+    width: 345px;               /* Примерная ширина, настраивайте по желанию */
+    height: 45px;               /* Высота поля */
+    margin: 0 auto;             /* Пример центрирования */
+    border: 1px solid var(--color-black-200);     /* Светлая рамка по окружности */
+    border-radius: 9999px;      /* Делаем полностью скруглённые углы */
+    display: flex;              /* Горизонтальное расположение иконки и поля */
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+    /* При желании можно добавить легкую тень */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Блок, в котором будет иконка (лупа) */
+.iconWrapper {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Сама иконка (SVG) */
+.searchIcon {
+    color: #999; /* Цвет иконки */
+}
+
+/* Стили для самого инпута */
+.searchInput {
+    flex: 1;                     /* Занимает оставшееся пространство */
+    border: none;                /* Убираем стандартную рамку инпута */
+    outline: none;               /* Убираем подсветку при фокусе */
+    font-size: 14px;             /* Размер шрифта */
+    color: #333;
+    background-color: transparent; /* Прозрачный, чтобы была видна фоновая заливка контейнера */
+}
+
+/* Устанавливаем цвет подсказки (placeholder) */
+.searchInput::placeholder {
+    color: #ccc;
+}

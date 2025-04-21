@@ -1,4 +1,3 @@
-import { Path } from 'app/routes/rootRouter.tsx';
 import { useGetPublicQuestionsByIdQuery } from 'pages/publicQuestion';
 import { useState } from 'react';
 import parse from 'html-react-parser';
@@ -19,7 +18,7 @@ export const QuestionLongCard = () => {
 
   return (
     <div className={s.page}>
-      <button className={s.back} onClick={() => navigate(Path.PublicQuestionsPage)}>
+      <button className={s.back} onClick={() => navigate(-1)}>
         ← Назад
       </button>
 

@@ -1,3 +1,3 @@
 export * from './ui/QuestionsFilters';
-export * from './ui/QuestionsFiltersSkeleton/QuestionsFiltersSkeleton';
-export * from './model/filterSlice';
+export * from './ui/QuestionsFiltersSkeleton/QuestionsFiltersSkeleton.tsx';
+export * from './model/filterSlice.ts';

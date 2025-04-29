@@ -1,0 +1,90 @@
+/* Pagination.module.css */
+.wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.arrow-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--color-purple-600);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.arrow-button:hover:not(.arrow-button-disabled) {
+    background-color: var(--color-white-900);
+    border-color: var(--color-purple-400);
+}
+
+.arrow-button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.page-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 21px;
+    min-height: 25px;
+    padding: 2px 6px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    color: var(--color-black-700);
+    transition: background-color 0.2s;
+}
+
+.page-button:hover:not(.page-button-active) {
+    background-color: var(--color-purple-300);
+    color: var(--color-black-600);
+}
+
+.page-button-active {
+    background: var(--color-purple-600);
+    color: var(--color-white-900);
+}
+
+.dots-icon {
+    font-size: 20px;
+    color: var(--color-black-600);
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+/* Skeleton styles */
+.skeleton {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+.skeleton-arrow {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.skeleton-page {
+    width: 21px;
+    height: 25px;
+    border-radius: 3px;
+    margin: 0 4px;
+}

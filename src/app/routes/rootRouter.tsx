@@ -1,8 +1,8 @@
-import { PublicQuestionPage } from 'pages/publicQuestion';
+import { PublicQuestionPage } from 'pages/publicQuestionPage';
 import { PublicQuestionsPage } from 'pages/PublicQuestionsPage';
 import { createBrowserRouter } from 'react-router-dom';
 import { Page404 } from 'shared/comonents';
-import App from '../layout/App.tsx';
+import BaseLayout from '../layout/BaseLayout.tsx';
 
 export const Path = {
   PublicQuestionsPage: 'questions/public-questions',
@@ -12,7 +12,7 @@ export const Path = {
 export const rootRouter = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <BaseLayout />,
     children: [
       {
         path: Path.PublicQuestionsPage,

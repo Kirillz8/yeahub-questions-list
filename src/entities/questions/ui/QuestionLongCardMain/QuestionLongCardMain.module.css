@@ -1,0 +1,122 @@
+.back {
+    background: none;
+    border: none;
+    color: var(--color-purple-600);
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+.back:hover {
+    border-bottom: 1px solid var(--color-purple-600);
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 800px;
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-black-800);
+    margin-bottom: 4px;
+}
+
+.titleAnswer {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-black-800);
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: var(--color-black-700);
+}
+
+.text {
+    white-space: pre-line;
+    line-height: 1.6;
+    position: relative;
+}
+
+.collapsed {
+    max-height: 740px;
+    overflow: hidden;
+    position: relative;
+}
+
+.toggleWrapper {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.toggle {
+    position: relative;
+    z-index: 2;
+    background: none;
+    border: none;
+    color: blueviolet;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 4px 4px 0 0;
+    font-size: 16px;
+    color: var(--color-black-800);
+}
+
+.text ul,
+.text ol {
+    list-style: none;        /* Убираем маркеры и нумерацию */
+    padding-left: 0;         /* Убираем отступ слева */
+    margin-left: 0;
+}
+
+.text li {
+    padding-left: 0;
+    margin-bottom: 8px;      /* Если нужен небольшой отступ между пунктами */
+}
+
+.questionHeader {
+    display: flex;
+    max-width: 600px;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.image {
+    width: 170px;
+    height: 114px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.textContent {
+    flex: 1;
+}

@@ -1,5 +1,5 @@
-import { baseApi } from 'app/baseApi/baseApi.ts';
-import type { QuestionsResponse } from 'entities/question';
+import type { QuestionsResponse } from 'entities/questions/model/types.ts';
+import { baseApi } from 'shared/api/baseApi.ts';
 
 export const publicQuestionsApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({

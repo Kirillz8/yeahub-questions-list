@@ -1,3 +1,3 @@
 export * from './store/store';
-export * from './baseApi/baseApi';
+export * from 'shared/api/baseApi.ts';
 export * from './routes/rootRouter';
